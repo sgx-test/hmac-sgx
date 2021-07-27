@@ -31,16 +31,22 @@ version = "0.7"
 [dependencies.digest]
 git = "https://github.com/sgx-test/digest-sgx"
 version = "0.8"
-[dev-dependencies.crypto-mac]
-version = "0.7"
-features = ["dev"]
 
-[dev-dependencies.md-5]
-version = "0.8"
-default-features = false
+#[dev-dependencies.crypto-mac]
+#version = "0.7"
+#features = ["dev"]
+#
+#[dev-dependencies.md-5]
+#version = "0.8"
+#default-features = false
+#
+#[dev-dependencies.sha2]
+#version = "0.8"
+#default-features = false
 
-[dev-dependencies.sha2]
-version = "0.8"
-default-features = false
 [badges.travis-ci]
 repository = "RustCrypto/hashes"
+
+[features]
+default = ["mesalock_sgx"]
+mesalock_sgx = ["sgx_tstd"]

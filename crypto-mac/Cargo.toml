@@ -43,5 +43,8 @@ default-features = false
 [features]
 dev = ["blobby"]
 std = []
+default = ["mesalock_sgx","dev"]
+mesalock_sgx = ["sgx_tstd"]
+
 [badges.travis-ci]
 repository = "RustCrypto/traits"
