@@ -29,7 +29,8 @@ path = "../crypto-mac"
 version = "0.7"
 
 [dependencies.digest]
-git = "https://github.com/sgx-test/digest-sgx"
+#git = "https://github.com/sgx-test/digest-sgx"
+git = "https://github.com/mesalock-linux/rustcrypto-traits-sgx"
 version = "0.8"
 
 #[dev-dependencies.crypto-mac]

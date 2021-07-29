@@ -32,12 +32,12 @@ version = "0.1"
 optional = true
 
 [dependencies.generic-array]
-git = "https://github.com/sgx-test/digest-sgx"
+#git = "https://github.com/sgx-test/digest-sgx"
 version = "0.12"
 
 [dependencies.subtle]
 git = "https://github.com/mesalock-linux/subtle-sgx"
-version = "1"
+#version = "1"
 default-features = false
 
 [features]
